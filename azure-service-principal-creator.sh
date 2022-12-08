@@ -6,6 +6,7 @@
 
 echo "Kloudle Azure onboarding script"
 echo "Creates a Service Principal with Reader permissions and prints data that will be used to onboard to Kloudle"
+echo "Data generation in progress. Do not interrupt the script, Azure CLI is known to be slow."
 echo 
 
 # Obtain subscription id
