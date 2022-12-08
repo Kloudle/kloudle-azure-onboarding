@@ -19,6 +19,8 @@ The script does the following
 
 ## Usage
 
+**Note: Please run the following command via the Azure Cloud Shell which you can access from the Azure dashboard menu bar**
+
 You can pass the shell script to curl directly using the raw GitHub URL
 
 ```bash
