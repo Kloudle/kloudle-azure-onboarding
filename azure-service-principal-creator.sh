@@ -17,9 +17,9 @@ export APP_NAME="kloudle-reader-app"
 # create a SP and obtain App ID and secret
 export RAW=$(az ad sp create-for-rbac --name $APP_NAME --role reader --scopes "$SCOPE" --output json 2>/dev/null)
 
-export APP_ID=$(echo $RAW | jq .appId | tr -d '"' )
-export APP_SECRET=$(echo $RAW | jq .password)
-export TENANT_ID=$(echo $RAW | jq .tenant)
+export APP_ID=$(echo $RAW | jq .appId | tr -d '"')
+export APP_SECRET=$(echo $RAW | jq .password | tr -d '"')
+export TENANT_ID=$(echo $RAW | jq .tenant | tr -d '"')
 
 # Assign additional reader roles, as Storage Account and Security Info is unavailable with only Reader
 az role assignment create --role "Reader and Data Access" --scope "$SCOPE" --assignee $APP_ID --output none
