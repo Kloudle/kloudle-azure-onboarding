@@ -25,6 +25,7 @@ export TENANT_ID=$(echo $RAW | jq .tenant | tr -d '"')
 az role assignment create --role "Reader and Data Access" --scope "$SCOPE" --assignee $APP_ID --output none
 az role assignment create --role "Security Reader" --scope "$SCOPE" --assignee $APP_ID --output none
 az role assignment create --role "Website Contributor" --scope "$SCOPE" --assignee $APP_ID --output none
+az role assignment create --role "Web Plan Contributor" --scope "$SCOPE" --assignee $APP_ID --output none
 
 # Microsoft Graph APIs Application Role Access
 
