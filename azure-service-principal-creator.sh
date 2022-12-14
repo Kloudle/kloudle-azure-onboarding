@@ -21,9 +21,10 @@ export APP_ID=$(echo $RAW | jq .appId | tr -d '"')
 export APP_SECRET=$(echo $RAW | jq .password | tr -d '"')
 export TENANT_ID=$(echo $RAW | jq .tenant | tr -d '"')
 
-# Assign additional reader roles, as Storage Account and Security Info is unavailable with only Reader
+# Assign additional reader roles, as Storage Account, Website Contributor and Security Info is unavailable with only Reader
 az role assignment create --role "Reader and Data Access" --scope "$SCOPE" --assignee $APP_ID --output none
 az role assignment create --role "Security Reader" --scope "$SCOPE" --assignee $APP_ID --output none
+az role assignment create --role "Website Contributor" --scope "$SCOPE" --assignee $APP_ID --output none
 
 # Microsoft Graph APIs Application Role Access
 
