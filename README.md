@@ -29,7 +29,7 @@ The script does the following
 You can pass the shell script to curl directly using the raw GitHub URL
 
 ```bash
-curl -sS https://raw.githubusercontent.com/Kloudle/kloudle-azure-onboarding/master/azure-service-principle-creator.sh | sh
+curl -sS https://raw.githubusercontent.com/Kloudle/kloudle-azure-onboarding/main/azure-service-principal-creator.sh | sh
 ```
 
 Share the output with the Kloudle Team or as required, paste the output in the Azure Onboarding page on the Kloudle App.
