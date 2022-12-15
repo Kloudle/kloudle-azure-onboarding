@@ -10,6 +10,11 @@ The script does the following
 2. Adds the `Reader` role to it for Azure account access
 3. Adds the `Reader and Data Access` role to it for Storage Account visibility access
 4. Adds `Security Reader` role to it for Security attribute visibility across Azure
+5. Adds `Website Contributor` role to it for reading Website configurations
+6. Adds `Web Plan Contributor` role to it for reading Web Plans for Websites
+7. Adds the `Directory.Read.All` Microsoft Graph APIs Application Role Access
+8. Adds the `Application.Read.All` and `Directory.Read.All` Windows Azure Active Directory Application Role Access
+9. Grants an Admin Consent for the app permissions added so that the Principal can work through the CLI
 
 ## Pre-requisites
 
