@@ -18,9 +18,9 @@ The script does the following
 
 ## Pre-requisites
 
-1. An Azure account that is has Owner privileges to Azure
+1. An Azure account that has Owner/Administrator privileges to Azure. The user should be able to create App Registrations.
 2. Access to Azure Cloud Shell where this script will be run. The Azure Cloud Shell has all the required tooling for this script to work quickly and without additional configuration.
-3. Also ensure you are in the correct Azure account and the correct subscription when logging in. You can confirm this by running `az account show` before running the script
+3. Also ensure that you are in the correct Azure account and the correct subscription in Azure Cloud Shell. You can confirm this by running `az account show` before running the script.
 
 ## Usage
 
